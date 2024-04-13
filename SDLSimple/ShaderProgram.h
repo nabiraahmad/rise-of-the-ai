@@ -33,7 +33,8 @@ private:
     GLuint m_fragment_shader;
     
 public:
-
+    void set_light_position(glm::vec3 position);
+    GLuint m_light_position_uniform;
     void load(const char *vertex_shader_file, const char *fragment_shader_file);
 
     void set_model_matrix(const glm::mat4 &matrix);
